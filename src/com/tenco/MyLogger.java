@@ -16,10 +16,4 @@ public class MyLogger {
 		logToConsole(message);
 		fileLogger.log(message);
 	}
-
-	// 테스트 코드
-	public static void main(String[] args) {
-
-	}
-
 }

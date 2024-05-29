@@ -24,16 +24,14 @@ public class FileLogger {
 			// 현재 시간
 			String now = dateFormat.format(new Date());
 			writer.write(now + " :: " + message);
-			writer.newLine(); // 다음줄에 쓸 수 있게끔?
+			writer.newLine(); // 다음줄에 쓸 수 있게끔 함.
 			writer.flush();
-
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
 	public void readLogs() {
-
 		try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
 			String line;
 			while ((line = reader.readLine()) != null) {
@@ -43,5 +41,4 @@ public class FileLogger {
 			e.printStackTrace();
 		}
 	}
-
 }

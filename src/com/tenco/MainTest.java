@@ -11,6 +11,5 @@ public class MainTest {
 		System.out.println("--------------------");
 
 		MyLogger.logToFile("예외 확인 형 변환 오류 발생");
-
 	}
 }
